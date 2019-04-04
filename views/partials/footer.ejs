@@ -1,0 +1,16 @@
+<script><% include ../../src/js/index.js %></script>
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js')
+            .then(function(registration) {
+                return registration.update();
+            }).catch(function(error) {});
+    });
+}
+</script>
+</body>
+</html>
+
+<!-- cache storage
+browser cache -->

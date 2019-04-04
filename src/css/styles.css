@@ -1,0 +1,396 @@
+body{
+background-color: #fff;
+margin: 0px;
+font-family: VWHeadWeb,Helvetica,Arial,sans-serif;
+}
+
+
+section{
+padding-top: 3em;
+padding-bottom: 3em;
+}
+
+
+h1{
+  font-weight: 700;
+}
+
+nav ul{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+nav{
+  background-color: #f5f5f5;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.4);
+  padding: 10px;
+}
+
+ul img{
+  width: 3rem;
+}
+
+nav ul li{
+list-style-type: none;
+margin-left: 10px;
+font-size: 18px;
+}
+
+ul li a:hover, ul li a:focus{
+  transition: .3s;
+  color: #00b1eb;
+}
+
+li a{
+  text-decoration: none;
+  color: #41494c;
+}
+
+@media screen and (min-width: 90em)
+html {
+    font-size: 131.78103%;
+}
+@media screen and (min-width: 74em)
+html {
+    font-size: 122.99563%;
+}
+@media screen and (min-width: 58em)
+html {
+    font-size: 114.79592%;
+}
+@media screen and (min-width: 38em)
+html {
+    font-size: 107.14286%;
+}
+
+.hero-block{
+  background-color: beige;
+  background-image: url(https://cdn.alzashop.com/Foto/LegendFoto/photos/DDV2001o_15.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 59%;
+}
+
+.offline{
+background-image: url(https://thegadgetflow.com/wp-content/uploads/2017/05/Sphero-Ultimate-Lightning-McQueen-Vehicle-05.jpg);
+}
+
+.hero-block h1, .grid-layout h2{
+font-size: 50px;
+}
+
+.hero-block h2{
+font-size: 35px;
+font-weight: 200;
+}
+.hero-block h2, .hero-block h1{
+color: #fff;
+text-shadow: 0 0 0.5rem #000;
+}
+
+.hero-block div{
+  padding-bottom: 185px;
+  padding-top: 60px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.hero-block a{
+  background-color: #00b1eb;
+  border-radius: .125em;
+  text-decoration: none;
+  text-align: center;
+      cursor: pointer;
+      transition: background-color .2s ease-in-out,box-shadow .2s ease-in-out,color .2s ease-in-out;
+padding: 20px;
+color: #fff;
+font-weight: 700;
+
+}
+.hero-block a:hover, .hero-block a:focus, .proefrit a:hover, .proefrit a:focus, .prompt:hover, .prompt:focus{
+  background-color: #009fd4;
+}
+
+
+.group-b{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-b>*:not(:last-child) {
+    border-right: 1px solid rgba(65,73,76,.1);
+}
+
+.group-b a{
+color: #1c1c1c;
+text-decoration: none;
+width: 20%;
+text-align: center;
+font-size: 20px;
+}
+
+.group-b a:hover, .group-b a:focus{
+text-decoration: underline;
+transition: .3s;
+}
+
+section h3{
+text-align: center;
+font-size: 25px;
+}
+
+.group-b div{
+  background-color: #00b1eb;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      margin-bottom: 10px;
+}
+
+.m-intro h2{
+  text-align: center;
+  font-size: 40px;
+}
+
+.m-intro p{
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.45;
+}
+
+.m-intro div{
+  background-color: #eee;
+  height: 400px;
+  max-width: 50%;
+  margin: auto;
+}
+
+.grid-layout{
+  line-height: 0.3;
+}
+
+.sub-header{
+color: #41494c;
+font-size: 30px; text-align: center;
+}
+
+.proefrit p, .e-40 p{
+  color: #41494c;
+  font-size: 20px;
+  padding-bottom: 1em;
+  line-height: 1.6;
+}
+
+.headers{
+margin: 0px;
+font-size: 45px;
+color: #1c1c1c;
+text-align: center;
+margin-bottom: .5em;
+}
+
+.proefrit{
+background-image: url(https://www.volkswagen.nl/-/media/vwpkw/images/elektrisch-rijden/elektrisch-rijden-campagne-wk2-2019/heroes/vw-elektrisch-rijden---_97a1639_xxl_450.ashx?w=802&q=70&hash=20113349CC7F55AFC50364D601A6ADA03A37FCA6);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 59%;
+padding-top: 20px;
+}
+
+.proefrit h2, .e-40 h2{
+text-align: left;
+}
+
+.proefrit div{
+  max-width: 30%;
+  margin-left: 9%;
+  background-color: #fff;
+  padding: 25px;
+}
+
+.e-40 div{
+  max-width: 30%;
+  margin-right: 9%;
+  background-color: #fff;
+  padding: 25px;
+  margin-left: auto;
+}
+
+.prompt{
+background-color: #00b1eb;
+border-radius: .125em;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+transition: background-color .2s ease-in-out,box-shadow .2s ease-in-out,color .2s ease-in-out;
+padding: 10px 25px;
+color: #fff;
+/* color: #690101; */
+font-size: 20px;
+font-weight: 700;
+}
+
+.dual-model-container{
+display: flex;
+max-width: 80%;
+margin: auto;
+}
+
+.dual-model-container>div{
+  max-width: 50%;
+  padding: 10px;
+}
+
+.teaser-body{
+  padding: 50px;
+}
+
+
+.teaser-media{
+  background-color: #eee;
+  padding-top: 350px;
+}
+
+.teaser-media p{
+  margin: 0px;
+  text-align: center;
+  background-color: #13b0eb;
+  color: #fff;
+  font-size: 25px;
+  margin-top: -29px;
+}
+
+.teaser-body p{
+  color: #41494c;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.toekomst{
+  background-color: #f1f4f5;
+}
+
+.toekomst-container{
+display: flex;
+flex-wrap: wrap;
+max-width: 100%;
+margin: auto;
+justify-content: center;
+}
+
+.toekomst-container p{
+text-align: center;
+}
+
+.toekomst-container>div{
+background-color: #fff;
+max-width: 20%;
+margin: 10px;
+}
+
+.toekomst-body{
+padding: 1em;
+}
+.toekomst-body p:first-of-type{
+padding-bottom: 1em;
+}
+
+.toekomst-media{
+  height: 300px;
+  background-color: #eee;
+}
+
+.e-40{
+background-image: url(https://www.volkswagen.nl/-/media/vwpkw/images/elektrisch-rijden/40-jaar-vw/vw-40-jaar-elektrisch-rijden-1920x650.ashx?w=1792&q=70&hash=CF10890BEE36C009FF1ABCCF13468858A0591460);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 59%;
+}
+
+.active, .e-40 p a{
+  font-size: 20px;
+  color: #13b0eb;
+}
+.e-40 p a:hover,.e-40 p a:focus{
+color: #009fd4;
+}
+
+.inf{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.inf>div{
+max-width: 30%;
+align-items: baseline;
+padding: 25px;
+}
+.inf p {
+  color: #41494c;
+  font-size: 20px;
+  padding-bottom: 1em;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
+}
+
+.inf div div{
+  height: 150px;
+  width: 150px;
+  background-color: #13b0eb;
+  margin: auto;
+}
+
+.questions h3{
+  font-family: VWHeadWeb,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  color: #1c1c1c;
+  font-size: 25px;
+  text-align: left;
+  padding: 10px;
+  transition: 3s;
+}
+
+.questions div p{
+display: none;
+transition: 3s;
+font-size: 20px;
+color: #41494c;
+line-height: 1.6;
+padding: 20px;
+}
+
+.questions div{
+  box-shadow: 0 0.0625rem 0.125rem rgba(0,0,0,.2);
+  max-width: 60%;
+  margin: auto;
+  transition: .5s ease-in-out;
+}
+
+.questions div:hover{
+  transition: 3s;
+}
+.questions div:hover p{
+  display: block;
+  transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+}
+
+.lazy{
+    opacity: 0;
+}
+
+.fade{
+    opacity: 1;
+    transition: 1s;
+    transition: opacity 0.3s;
+}
