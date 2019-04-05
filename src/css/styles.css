@@ -47,22 +47,6 @@ li a{
   color: #41494c;
 }
 
-@media screen and (min-width: 90em)
-html {
-    font-size: 131.78103%;
-}
-@media screen and (min-width: 74em)
-html {
-    font-size: 122.99563%;
-}
-@media screen and (min-width: 58em)
-html {
-    font-size: 114.79592%;
-}
-@media screen and (min-width: 38em)
-html {
-    font-size: 107.14286%;
-}
 
 .hero-block{
   background-color: beige;
@@ -386,11 +370,156 @@ padding: 20px;
 }
 
 .lazy{
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .fade{
     opacity: 1;
     transition: 1s;
     transition: opacity 0.3s;
+}
+
+
+@media (max-width: 30em){
+  .group-b a {
+    width: 40%;
+}
+    .group-b>*:not(:last-child) {
+    border: none;
+}
+
+nav ul {
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: scroll;
+}
+.hero-block h1, .grid-layout h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero-block h2 {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.m-intro p {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.m-intro h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.m-intro div {
+    height: 300px;
+    max-width: 80%;
+}
+.grid-layout {
+    line-height: 1.3;
+}
+.headers {
+    margin: 0px;
+    font-size: 30px;
+    color: #1c1c1c;
+    margin-bottom: .5em;
+}
+.proefrit p, .e-40 p {
+    color: #41494c;
+    font-size: 18px;
+}
+.sub-header {
+    font-size: 23px;
+}
+
+.dual-model-container>div {
+    max-width: 45%;
+    padding: 12px;
+}
+.teaser-media p {
+    font-size: 14px;
+    margin-top: -30px;
+}
+.teaser-body p {
+    color: #41494c;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.teaser-body {
+  padding: 10px;
+}
+.prompt{
+  padding: 10px 8px;
+  font-size: 14px;
+}
+.toekomst-container>div {
+    max-width: 40%;
+}
+.toekomst-body {
+    padding: 10px;
+}
+.toekomst-media {
+    height: 200px;
+}
+.e-40 div {
+    max-width: 80%;
+}
+.questions div {
+    max-width: 80%;
+}
+.inf>div {
+    max-width: 35%;
+}
+.inf p {
+    padding-bottom: .5em;
+    line-height: 1.3;
+    max-width: 100%;
+}
+.proefrit div {
+    max-width: 80%;
+}
+.dual-model-container {
+    max-width: 95%;
+}
+.teaser-media {
+    padding-top: 250px;
+}
+.hero-block div {
+    padding-bottom: 0px;
+}
+}
+
+@media (min-width: 30em) and (max-width: 55em)  {
+  .prompt{
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+  .grid-layout {
+      line-height: 1.3;
+  }
+  .hero-block div {
+      padding-bottom: 85px;
+}
+}
+
+@media (min-width: 55em) and (max-width: 65em)  {
+  .grid-layout {
+      line-height: 1.2;
+  }
+  .hero-block div {
+      padding-bottom: 85px;
+}
+}
+
+@media (min-width: 65em) {
+  .grid-layout {
+      line-height: 1.3;
+  }
 }

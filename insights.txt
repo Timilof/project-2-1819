@@ -1,6 +1,6 @@
 --- tabbing - focus styles ---
 --- Accessibility without javascript - server side rendering ---
-Serve images in next-gen formats
-Consider lazy-loading
+--- Serve images in next-gen formats
+--- Consider lazy-loading
 --- Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps. ---
 --- Render content server side instead through client ---
