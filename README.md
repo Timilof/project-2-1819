@@ -1,36 +1,36 @@
-# Project 2 @cmda-minor-web · 2018-2019
+# Project 2 | Volkswagen .nl
 
-## Aanbevelingen voor een robuste, toegankelijke en snelle web toepassing
+![application](src/img/app.png)  
 
-Het project vindt plaats bij in ons eigen lokaal. Maandagochtend is om 9.30 uur de kickoff (bij de oprachtgever), vrijdag zijn de presentaties van de resultaten (bij de opdrachtgever). In een week bouwt iedere student een eigen prototype ter onderbouwing van aanbevelingen aan de opdrachtgevers (Valtech, Mirabeau & CMD Amsterdam). De aanbevelingen betreffen het verbeteren van toegankelijkheid en performance van de web sites / applicaties. Technieken geleerd bij [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819) en [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) worden toegepast bij het bouwen van de de prototypes en et schrijven van de aanbevelingen.
+## Recommended changes for a faster and more accessible volkswagen.nl
 
-## Programma
-Maandag - 9.30 - kickoff
-Woensdag - voortgangbespreking
-Vrijdag presentatie
+In a weeks time I built a prototype to reflect and support dome of the changes/improvements I made to the volkswagen.nl site. The changes I reccomend are based on improving performace (making the website faster) and accessibility. In this readme I'll be explaining the changes i made and the impact each had.
 
-## Werkwijze en Criteria
-### Werkwijze
-Full-time week werken aan optimaliseren van toegankelijkheid en performance van een website. Vrijdag is de pitch! Student laat zien dat hij/zij de vakken [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819) en [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) begrijpt en beheerst.
+--- tabbing/ focus styles  
+--- Accessibility without javascript - server side rendering  
+--- Serve images in next-gen formats  
+--- Consider lazy-loading  
+--- Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps.  
+--- Render content server side instead through client  
 
-Iedere dag zijn er coaches aanwezig voor coaching en feedback. We sluiten de dag af met een stand up, om de status door te spreken. Waar ben je mee bezig? Loop je ergens vast of heb je hulp nodig? Waar sta je?
+## Accessibility at Volkswagen.nl   
 
-### Beoordeling
-Tijdens de beoordeling krijg je feedback op het resultaat en op je functioneren. De vakdocenten kijken naar je code en beoordelen In hoeverre je in het project laten zien dat je de bijhorende vakken beheerst en goed hebt toegepast. De opdrachtgver is geïnteresseerd in hoeverre je oplossing voldoet aan de eisen die zijzelf stellen aan hun producten. Misschien laat je wel wat zien waar ze zelf nog niet aan gedacht hebben?
+The site for Volkswagen worked fine although it was slightly outdated and had a few opportunities for improvement.   
+As far as accessibility the site didn't do too bad and offered decent keyboard navigation and compatibility with screenreaders. Only a handful of times did it offer a bad experience by not being descriptive with links, bad contrast between fore- and background, placing text within an image and breaking on tablet devices.  
+I tackled these issues by writing semanticly correct html that was also screenreader-friendly, adding missing focus styles, changing the contrast between certain elements and splitting text from images. Now the site is a lot more accesible with only a small number of changes.  Very easy and quick to implement.  
 
-Het project telt als AVV mee met de Meesterproef.
+## Performance at Volkswagen.nl   
 
-### Feedback over functioneren
-Je hebt een leergierig, gedreven en zelfredzame houding nodig om de minor te kunnen halen. Welke vaardigheden heb je laten zien? Onderzoekend vermogen? Creativiteit? Conceptueel? In hoeverre komen je houding en verworven vaardigheden overeen met wat een frontender in de praktijk nodig heeft?
+Next I checked how well the site did performance wise and looked for ways to improve.  
+What I found was that the site was loading a huge number of files and seemingly merged many javascript files to one another creating a huge 14500+ lines sized javascript file. I don't know what it did (but my guess is that a lot of it is analytics and third party scripts because I can't imagine there's thousands of lines of code needed for a simple site as this one), but in my revised version it doesn't do any of that any more. Meaning it's lighter and faster now. Previously the site would refuse to display certain content if/when javascript was disabled, I've learnt this is bad behaviour and have made it possible to render all content without.  
+The CSS file is also a lot smaller now seeing as I removed a lot of the styling that wasn't being used. Another big change I made was installing a service worker, which cahces certain pages and elements of the site in the clients' cache, making the website available even offline (when the client doesn't have access to WiFi). Furthermore I minified the CSS and JavaScript to make it even lighter.  
 
-### Browser Technologies
-In het vak [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819)) heb je geleerd wat de core functionalitiet van een web toepassing is en hoe je deze functionaliteit met progressive enhancement kan opbouwen tot een robuste web teopassing. Ook heb je geleerd hoe hiermee de toegankelijkheid van een web toepassing kan worden verbeterd. 
+### Should have
 
-### Performance Matters
-In het vak [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) heb je geleerd hoe je een web toepassing (ogenschijnlijk) sneller kan maken en ook offline kan laten werken. Hiermee verbeter je de gebruikservaring van de web toepassing in alle omstandigheden.  
+I also found that the images being served weren'talways suitable and were slightly outdated so volkswagen (or the developers at Valtech) might want to look into serving images in next-gen formats.  
 
 
-### Oplevering & criteria
-- Presentatie met je bevindingen bij de opdrachtgever. 
-- Github met je code en readme.
+### Feature wishlist
+
+I would have liked to have data about the site's visitors so I could have recommended more suitable solutions and/or improvements.
 
